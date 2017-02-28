@@ -1,0 +1,225 @@
+@font-face{
+	font-family: "Seg";
+	src: url("segoe.ttf");
+}
+body{
+	margin: 0px;
+	font-family: Seg;
+}
+@keyframes trans{
+	from{
+		background-color: rgba(23, 114, 164, 0.92);
+		height: 90px;
+	}to{
+		background-color: rgba(23, 114, 164, 1);
+		height: 70px;
+	}
+}
+@keyframes revtrans{
+	from{
+		background-color: rgba(23, 114, 164, 1);
+		height: 70px;
+	}to{
+		background-color: rgba(23, 114, 164, 0.92);
+		height: 90px;
+	}
+}
+@keyframes -lch{
+	from{
+		width: 30%;
+		height: 30%;
+	}to{
+		width: 23%;
+		height: 23%;
+	}
+}
+@keyframes lch{
+	from{
+		width: 23%;
+		height: 23%;
+	}to{
+		width: 30%;
+		height: 30%;
+	}
+}
+@keyframes quotA{
+  from{
+    font-size: 22pt;
+    top: 20px;
+    left: 175px;
+  }to{
+    font-size: 18pt;
+    top: 15px;
+    left: 125px;
+  }
+}
+@keyframes -quotA{
+  from{
+    font-size: 18pt;
+    top: 15px;
+    left: 125px;
+  }to{
+    font-size: 22pt;
+    top: 20px;
+    left: 175px;
+  }
+}
+.noscroll{
+  overflow: hidden;
+}
+.absCenter{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+.fixedCenter{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+.centV{
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+}
+.centH{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.h1{
+	width: 100%;
+	height: 90px;
+	background-color: rgba(23, 114, 164, .92);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+.h1t{
+	animation: 0.5s 1 forwards revtrans;
+}
+.h2{
+	animation: 0.5s 1 forwards trans;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+.l2{
+	animation: 0.5s 1 forwards -lch;
+}
+.ln{
+	animation: 0.5s 1 forwards lch;
+}
+.q2{
+  animation: 0.5s 1 forwards quotA;
+}
+.qn{
+  animation: 0.5s 1 forwards -quotA;
+}
+#backg{
+	position: fixed;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+}
+#stop{
+	position: absolute;
+	top: 550px;
+	width: 3px;
+	height: 3px;
+}
+#outer{
+	position: absolute;
+	top: 440px;
+	width: 100%;
+	background-color: rgba(240, 240, 248, 0.9);
+	height: 2810px;
+}
+#main{
+	width: 1050px;
+	height: 2750px;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	border: 2px #A1A1A1 solid;
+	border-top: none;
+}
+#title{
+	position: absolute;
+	top: 360px;
+	width: 1050px;
+	height: 160px;
+	background-color: rgba(220, 220, 220, .8);
+	border-radius: 5px 5px 0px 0px;
+	color: black;
+	font-size: 30pt;
+}
+#titltxt{
+  position: absolute;
+  top: 40px;
+  left: 75px;
+}
+#author{
+  position: absolute;
+  font-size: 16pt;
+  top: 100px;
+  left: 75px;
+}
+#logo{
+	width: 30%;
+	height: 30%;
+}
+#logoH{
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	width: 392px;
+	height: 245px;
+}
+#quote{
+  position: absolute;
+  top: 20px;
+  left: 175px;
+  color: #191919;
+  font-size: 22pt;
+}
+#intro{
+	margin: 30px;
+	font-family: Seg;
+	font-size: 20pt;
+	text-align: justify;
+}
+.firstcharacter{
+	color: #000057;
+	float: left;
+	font-family: Seg;
+	font-size: 75px;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+}
+.otherTxt{
+	font-size: 18pt;
+	margin:30px;
+	text-indent: 75px;
+	text-align: justify;
+}
+a{
+	color: #000F9F;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:active{
+	color: #2C34DC;
+}
+a:visited{
+	color: #001A4F;
+}
